@@ -1,10 +1,23 @@
+main {
+  width: 800px;
+  margin: 200px auto;
+  background-color: rgb(161, 129, 174);
+  padding: 24px;
+  /* border: 굵기 스타일 색상; */
+  border: 3px solid rgb(44, 44, 44);
+  border-radius: 8px;
+  /* box-shadow: x방향 y방향 흐린정도 그림자의크기(0->박스와 동일한 사이즈) 색상; */
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.5);
+}
+
 img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 3px solid rgb(44, 44, 44);
+  margin-top: -124px;
 }
-_
-a:hover {
+_ a:hover {
   text-decoration: underline;
 }
 
