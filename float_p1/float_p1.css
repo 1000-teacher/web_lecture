@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ 하단에 코드를 작성하세요 */
+/* 
+[V]동그라미 없애기 (ol태그가 갖고 있는 속성)
+각각의 아이템을 가로배치 (float)
+[V]여백(상하16px 좌우20px), 간격(오른쪽에16px) 설정
+Emails라는 요소는 조건에 맞게 추가 CSS작업
+가상요소   float의 부작용 상쇄
+*/
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul::after {
+  content: "";
+  clear: left;
+  display: block;
+}
+
+li {
+  float: left;
+  margin-right: 16px;
+}
+
+a {
+  padding: 16px 20px;
+  display: block;
+}
+
+.active {
+  border-bottom: 2px solid #7f3030;
+}
+
+.active a {
+  font-weight: bold;
+  color: #7f3030;
+}
